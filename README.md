@@ -1,20 +1,21 @@
-**Rock-Paper-Scissors Game**
+## Rock Paper Scissors Game - Web Implementation
 
-This code comprises a simple Rock-Paper-Scissors game designed to be played in the console. The game includes functions to generate the computer's choice randomly, prompt the player for their choice, and determine the winner of each round. It also manages a 5-round game and displays the results.
+This code represents a Rock-Paper-Scissors game implemented for the web. It offers an interactive interface using HTML, CSS, and JavaScript. The game provides three options (rock, paper, or scissors) as buttons for player selection and displays the results dynamically on the webpage.
 
-**Functions:**
-- `getComputerChoice()`: Generates a random choice for the computer between 'rock', 'paper', or 'scissors'.
-- `getPlayerChoice()`: Prompts the player to enter their choice ('rock', 'paper', or 'scissors').
-- `playRound(playerSelection, computerSelection)`: Determines the winner for a round based on the choices made by the player and the computer.
-- `game()`: Orchestrates a 5-round game between the player and computer, tracking wins and displaying results after each round.
+### HTML Structure
+The HTML file contains buttons for each option, a result display area, a log to show the round results, and a 'Replay' button to start a new game.
 
-**How to Play:**
-1. The game starts when executed.
-2. For each round, the player inputs their choice when prompted.
-3. The computer randomly selects its choice.
-4. The game determines the winner for each round and displays the results in the console.
-5. After 5 rounds, the final result (whether the player wins, the computer wins, or it's a tie) is displayed.
+### JavaScript Functions
+- `getComputerChoice()` generates a random choice (rock, paper, or scissors) for the computer.
+- `playRound(playerSelection, computerSelection)` determines the winner for a round based on the player's and computer's choices.
+- `handlePlayerChoice()` handles player interaction by detecting button clicks and triggering game rounds.
+- `updateScore(result)` updates the score and checks for game completion.
+- `disableButtons()` disables buttons after the game ends.
 
-The outcome of the game is shown in the console, declaring whether the player or computer wins or if it ends in a tie.
+### CSS Styling
+The CSS file styles the game interface, utilizing background images, button styles, text formatting, and layout adjustments for a visually appealing experience.
 
-The game logic is implemented through functions and loops to create an interactive experience within the console environment, simulating the classic Rock-Paper-Scissors game.
+#### Screenshot of the Website
+![Rock Paper Scissors Website](/home/yan/repos/rock-paper-scissors/screenshot.png)
+
+The game logic is implemented using event listeners, DOM manipulation, and CSS styling to create an engaging and user-friendly Rock-Paper-Scissors game on the web.
