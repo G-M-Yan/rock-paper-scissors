@@ -16,6 +16,7 @@ The HTML file contains buttons for each option, a result display area, a log to 
 The CSS file styles the game interface, utilizing background images, button styles, text formatting, and layout adjustments for a visually appealing experience.
 
 #### Screenshot of the Website
+
 ![screenshot](https://github.com/G-M-Yan/rock-paper-scissors/assets/142749621/6d2e9a51-a8e6-4552-aae6-f914978b1a0b)
 
 
