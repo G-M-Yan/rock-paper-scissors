@@ -1,68 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<script>
-    function getComputerChoice() {
-        let randomNumber = Math.floor(Math.random() * 3);
-        
-        if (randomNumber === 0) {
-            return 'rock';
-        } else if (randomNumber === 1) {
-            return 'paper';
-        } else {
-            return 'scissors';
-        }
-    }
-
-    function getPlayerChoice() {
-        return prompt('Rock, Paper or Scissors ?').toLowerCase();
-    }
-
-    function playRound(playerSelection, computerSelection) {
-        if (playerSelection ==='rock' && computerSelection === 'scissors'
-        || playerSelection ==='paper' && computerSelection === 'rock'
-        || playerSelection ==='scissors' && computerSelection === 'paper') {
-            return 'You Win!';
-        } else if (playerSelection === computerSelection) {
-            return 'Draw!';
-        } else {
-            return 'Computer Wins!'
-        }
-    }
-
-    function game() {
-        let playerWins = 0;
-        let computerWins = 0;
-
-        for (let i = 0; i < 5; i++) {
-            let playerChoice = getPlayerChoice();
-            let computerChoice = getComputerChoice();
-            let result = playRound(playerChoice, computerChoice);
-            console.log(`Round ${i + 1}: You choose ${playerChoice.toUpperCase()}, computer choose ${computerChoice.toUpperCase()}. ${result}`);
-            if (result === 'You Win!') {
-                playerWins++;
-            } else if (result === 'Computer Wins!')  {
-                computerWins++;
-            }
-        }
-
-        if (playerWins > computerWins) {
-            console.log('You win the game!');
-        } else if (playerWins < computerWins) {
-            console.log('Computer wins the game!');
-        } else {
-            console.log("It's a tie!");
-        }
-    }
-    
-    console.log(game());
-    
-</script>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="title">Choose your weapon!</p>
+        <div class="container">
+            <div id="btns">
+                <button class="rock" ><img src="rock.png" alt="rock-button" class="rock"></button>
+                <button class="paper"><img src="paper.png" alt="paper-button" class="paper"></button>
+                <button class="scissors"><img src="scissors.png" alt="scissors-button" class="scissors"></button>
+            </div>
+            
+            <div id="result"></div>
+            <div id="log"></div>
+            <button id="replay">Replay</button>
+        </div>
+    <script src="script.js" defer></script>
+    </body>
 </html>
