@@ -16,6 +16,6 @@ The HTML file contains buttons for each option, a result display area, a log to 
 The CSS file styles the game interface, utilizing background images, button styles, text formatting, and layout adjustments for a visually appealing experience.
 
 #### Screenshot of the Website
-![Rock Paper Scissors Website](/home/yan/repos/rock-paper-scissors/screenshot.png)
+![Rock Paper Scissors Website](./home/yan/repos/rock-paper-scissors/screenshot.png)
 
 The game logic is implemented using event listeners, DOM manipulation, and CSS styling to create an engaging and user-friendly Rock-Paper-Scissors game on the web.
